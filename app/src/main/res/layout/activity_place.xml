@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".activities.PlaceActivity">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textName"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_below="@+id/textAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textGeolocationDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geolocation Data:"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="168dp"
+        android:layout_below="@+id/textType"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitude"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="203dp"
+        android:layout_below="@+id/textGeolocationDescription"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/textLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitude"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="235dp"
+        android:layout_below="@+id/textLatitude"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/textAtcoCodeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATCO Code:"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="268dp"
+        android:layout_below="@+id/textLongitude"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textAtcoCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atco code"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="306dp"
+        android:layout_below="@+id/textAtcoCodeDescription"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/textSetAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set as"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="442dp"
+        android:layout_below="@+id/textAtcoCode"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonSetStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Destination"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="464dp"
+        android:layout_below="@+id/textSetAs"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

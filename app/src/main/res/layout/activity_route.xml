@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".activities.RouteActivity">
+
+    <TextView
+        android:id="@+id/textDesc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Start Point"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textDesc1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textMiscInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_below="@+id/textName1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:id="@+id/textDesc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:text="End Point"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textMiscInfo1"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textDesc2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textMiscInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_below="@+id/textName2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/textDesc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Duration"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textMiscInfo2"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:..:.."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textDesc3"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textDesc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Departure"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textDuration"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textDeparture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:..:..:..:..:.."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textDesc4"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textDesc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Arrival"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textDeparture"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/textArrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="..:..:..:..:..:.."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_below="@+id/textDesc5"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Route"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="464dp"
+        android:layout_below="@+id/textArrival"
+        android:layout_marginTop="50dp" />
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/parent">
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textStartDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:text="Start Point: "
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textStartName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/textStartDesc"
+        android:text="start name "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textEndDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textStartDesc"
+        android:layout_marginStart="15dp"
+        android:text="End Point: "
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textEndName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="73dp"
+        android:layout_toRightOf="@+id/textEndDesc"
+        android:text="end name "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textDurationDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEndDesc"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:text="Duration: "
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="123dp"
+        android:layout_toRightOf="@+id/textDurationDesc"
+        android:text="..:..:.. "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textDepartureDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDurationDesc"
+        android:layout_marginStart="15dp"
+        android:text="Departure: "
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="143dp"
+        android:layout_toRightOf="@+id/textDepartureDesc"
+        android:text="..:..:..:..:.. "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textArrivalDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDepartureDesc"
+        android:layout_marginStart="15dp"
+        android:text="Arrival: "
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="163dp"
+        android:layout_toRightOf="@+id/textArrivalDesc"
+        android:text="..:..:..:..:.. "
+        android:textSize="14sp" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/editIcon"-->
+<!--        android:layout_toRightOf="@+id/textArrival"-->
+<!--        android:minWidth="40dp"-->
+<!--        android:minHeight="40dp"-->
+<!--        android:layout_marginStart="200dp"-->
+<!--        android:src="@drawable/ic_edit"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconDelete"
+        android:layout_toRightOf="@+id/textArrival"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/ic_delete"
+        android:layout_marginTop="130dp"/>
+</RelativeLayout>
